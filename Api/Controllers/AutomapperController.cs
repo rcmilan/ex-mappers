@@ -16,8 +16,8 @@ namespace Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("simple_map")]
+        public IActionResult Simple()
         {
             var person = new Person
             {
@@ -34,6 +34,32 @@ namespace Api.Controllers
             };
 
             var result = _mapper.Map<PersonDto>(person);
+
+            return Ok(result);
+        }
+
+        [HttpGet("existing_object")]
+        public IActionResult ExistingObject()
+        {
+            var source = new Person
+            {
+                Address = new Address
+                {
+                    Id = Guid.NewGuid(),
+                    Street = "Rua 123",
+                    District = "Bairro 123",
+                    Number = "123A"
+                }
+            };
+
+            var result = new Person
+            {
+                Id = 1000,
+                Name = "Pessoa ABC",
+                Phone = "Phone-123",
+            };
+
+            _mapper.Map(source, result);
 
             return Ok(result);
         }

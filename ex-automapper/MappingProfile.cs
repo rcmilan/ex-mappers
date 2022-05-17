@@ -13,6 +13,10 @@ namespace ex_automapper
                 .ForMember(dest => dest.District, opt => opt.MapFrom(src => src.Address.District))
                 .ForMember(dest => dest.Number, opt => opt.MapFrom(src => src.Address.Number))
                 ;
+
+            CreateMap<Person, Person>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null));
         }
     }
 }

@@ -4,9 +4,9 @@ using Domain.Models;
 
 namespace ex_automapper
 {
-    internal class MappingProfile : Profile
+    internal class PersonProfile : Profile
     {
-        public MappingProfile()
+        public PersonProfile()
         {
             CreateMap<Person, PersonDto>()
                 .ForMember(dest => dest.Street, opt => opt.MapFrom(src => src.Address.Street))

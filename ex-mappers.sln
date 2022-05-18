@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex-automapper", "ex-automap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{967EDFF1-C7F6-4D7E-9B54-428D944A688B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "automapper.tests", "automapper.tests\automapper.tests.csproj", "{5A8C7492-DB87-45EB-8267-A6F30547A826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "automapper.tests", "automapper.tests\automapper.tests.csproj", "{5A8C7492-DB87-45EB-8267-A6F30547A826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex-mapster", "ex-mapster\ex-mapster.csproj", "{36CD4701-8961-418A-9B07-86668AB8F9FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{5A8C7492-DB87-45EB-8267-A6F30547A826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A8C7492-DB87-45EB-8267-A6F30547A826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A8C7492-DB87-45EB-8267-A6F30547A826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CD4701-8961-418A-9B07-86668AB8F9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CD4701-8961-418A-9B07-86668AB8F9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CD4701-8961-418A-9B07-86668AB8F9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CD4701-8961-418A-9B07-86668AB8F9FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{243DADD6-7F29-47D8-856C-03C4B8DA0898} = {CD4FE2A5-68EF-4DC0-8DB2-323A8DB179D4}
 		{5A8C7492-DB87-45EB-8267-A6F30547A826} = {967EDFF1-C7F6-4D7E-9B54-428D944A688B}
+		{36CD4701-8961-418A-9B07-86668AB8F9FA} = {CD4FE2A5-68EF-4DC0-8DB2-323A8DB179D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC447A40-02D3-4622-8B4F-91EED1AAFF0F}

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\ex-automapper\ex-automapper.csproj" />
+    <ProjectReference Include="..\ex-mapster\ex-mapster.csproj" />
   </ItemGroup>
 
 </Project>
